@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(252, 252, 252);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="header">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1100</width>
+      <height>135</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1000</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: 
+#FFFFFF; </string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="kumuluslogo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>261</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../../Downloads/index.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="APPTitle">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>30</y>
+       <width>411</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Ubuntu Condensed&quot;;
+color: #2E279D;
+font: 90 20pt &quot;Waree&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Kumulus  Sensor Calibrating </string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="body">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>1100</width>
+      <height>900</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1100</width>
+      <height>900</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1100</width>
+      <height>900</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: #FFFFFF;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>171</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #ACE5FF;
+border-radius: 12px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QComboBox" name="COM">
+          <property name="minimumSize">
+           <size>
+            <width>5</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 252, 252);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="startButton">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"> display:inline-block;
+font: 75 11pt &quot;Ubuntu Condensed&quot;;
+font: 63 15pt &quot;URW Bookman&quot;;
+background-color: #2b9348;
+ padding:0.3em 1.2em;
+ margin:0 0.1em 0.1em 0;
+ border:0.16em ;
+ border-radius:2em;
+color: rgb(252, 252, 252);
+</string>
+          </property>
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="stopButton">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 63 15pt &quot;URW Bookman&quot;;
+color: rgb(252, 252, 252);
+background-color: rgb(204, 0, 0);
+border-radius: 12px;</string>
+          </property>
+          <property name="text">
+           <string>Stop | Save</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QFrame" name="display">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>10</y>
+       <width>791</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="SensoHeader">
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>170</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>URW Bookman</family>
+            <pointsize>20</pointsize>
+            <weight>10</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(46, 39, 157);
+font: 80 20pt &quot;URW Bookman&quot;;
+background-color: #FFFFFF;</string>
+          </property>
+          <property name="text">
+           <string>Sensor</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="VoltageHeader">
+          <property name="maximumSize">
+           <size>
+            <width>170</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>URW Bookman</family>
+            <pointsize>20</pointsize>
+            <weight>10</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(46, 39, 157);
+
+font: 80 20pt &quot;URW Bookman&quot;;
+background-color: #FFFFFF;</string>
+          </property>
+          <property name="text">
+           <string>Tension</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ValueHeader">
+          <property name="maximumSize">
+           <size>
+            <width>170</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>URW Bookman</family>
+            <pointsize>20</pointsize>
+            <weight>10</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(46, 39, 157);
+font: 80 20pt &quot;URW Bookman&quot;;
+background-color: #FFFFFF;
+</string>
+          </property>
+          <property name="text">
+           <string>Value</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="DateHeader">
+          <property name="maximumSize">
+           <size>
+            <width>170</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>URW Bookman</family>
+            <pointsize>20</pointsize>
+            <weight>10</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(46, 39, 157);
+font: 80 20pt &quot;URW Bookman&quot;;
+background-color: #FFFFFF;</string>
+          </property>
+          <property name="text">
+           <string>Date</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>500</width>
+          <height>500</height>
+         </size>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>761</width>
+           <height>171</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_values">
+          <item>
+           <widget class="QLabel" name="SensorLabel">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;Nirmala UI Semilight&quot;;
+background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>TT</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="Tensionlabel">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;Nirmala UI Semilight&quot;;
+background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>TT</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="Valueelabel">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;Nirmala UI Semilight&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+            </property>
+            <property name="text">
+             <string>TT</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="Datelabel">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;Nirmala UI Semilight&quot;;
+background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>TT</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>10</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="Copyright">
+     <property name="geometry">
+      <rect>
+       <x>956</x>
+       <y>676</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/newPrefix/droits-dauteur.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="Curve">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>791</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(85, 87, 83);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="VisualiseButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>300</y>
+       <width>131</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 12px;
+background-color: #46B3E6;
+ padding:0.3em 1.2em;
+ margin:0 0.1em 0.1em 0;
+ border:5px ;
+ border-radius:5 px;
+ box-sizing: border-box;</string>
+     </property>
+     <property name="text">
+      <string>Visualisation</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuInterface">
+    <property name="title">
+     <string>Interface</string>
+    </property>
+   </widget>
+   <addaction name="menuInterface"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../../../Downloads/logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

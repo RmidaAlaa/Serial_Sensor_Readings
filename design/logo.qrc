@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>droits-dauteur.png</file>
+  </qresource>
+</RCC>
