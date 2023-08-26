@@ -12,6 +12,7 @@
 *.spec
 
 #CSV files 
+src/*
 *.csv
 
 # Built Visual Studio Code Extensions
