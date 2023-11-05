@@ -1,1 +1,1 @@
-# Serial_Sensor_Readings
+# Serial_Sensor_Readings_App
